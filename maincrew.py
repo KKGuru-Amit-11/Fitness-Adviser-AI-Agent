@@ -12,9 +12,9 @@ from langchain_groq import ChatGroq
 from crewai_tools import SerperDevTool
 
 # # LLM Monitering
-os.environ['LANGCHAIN_TRACING_V2']='true'
-os.environ['LANGCHAIN_API_KEY']=st.secrets['LANGCHAIN_API_KEY']
-os.environ['LANGCHAIN_PROJECT']='HealthCare Fitness Adviser AI Agents'
+# os.environ['LANGCHAIN_TRACING_V2']='true'
+# os.environ['LANGCHAIN_API_KEY']=st.secrets['LANGCHAIN_API_KEY']
+# os.environ['LANGCHAIN_PROJECT']='HealthCare Fitness Adviser AI Agents'
 
 
 # Creating Web Page Header
