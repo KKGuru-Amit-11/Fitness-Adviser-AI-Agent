@@ -43,7 +43,7 @@ with st.form(key='Submission_Form',clear_on_submit=True):
 def model_selection(value):
     if value == 'Gemini Model':
         os.environ['GOOGLE_API_KEY']=st.secrets['GOOGLE_API_KEY']
-        llm_model = ChatGoogleGenerativeAI(model='gemini/gemini-1.5-flash',api_key=os.getenv('GOOGLE_API_KEY'))
+        llm_model = ChatGoogleGenerativeAI(model='gemini-1.5-flash',api_key=os.getenv('GOOGLE_API_KEY'))
         return llm_model
     else:
         os.environ['GROQ_API_KEY']=st.secrets['GROQ_API_KEY']
